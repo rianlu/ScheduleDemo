@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_course"
+        android:title="添加课程"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add_menu"/>
+    <item
+        android:id="@+id/import_data"
+        android:title="导入"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/export_data"
+        android:title="导出"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/use_info"
+        android:title="关于"
+        app:showAsAction="never"/>
+
+</menu>

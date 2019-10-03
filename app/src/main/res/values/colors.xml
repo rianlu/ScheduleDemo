@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏颜色-->
+    <color name="colorPrimary">#E73A38</color>
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">#E73A38</color>
+    <!--各个控件选中的颜色-->
+    <color name="colorAccent">#E73A38</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    
+    <color name="colorGray">#ebedec</color>
+
+    <!--<color name="colorOrange">#F75940</color>-->
+
+    <color name="colorRed">#E73A38</color>
+
+    <color name="startRadient">#C04848</color>
+
+    <color name="endRadient">#480048</color>
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ScheduleDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tip_dialog">
+        &#160;&#160;第一次使用请先设置当前周。\n\n
+        &#160;&#160;长按左上角设置当前周，长按课表可以进行修改删除操作。\n\n
+        &#160;&#160;导入备份需要将备份文件放到根目录，导出的备份也是在根目录，如果添加课表失败，查看是否禁用了存储权限。
+    </string>
+
+    <string name="string_course">课程名称</string>
+    <string name="string_teacher">教师名称</string>
+    <string name="string_location">地点</string>
+    <string name="string_start_week">开始周</string>
+    <string name="string_end_week">结束周</string>
+    <string name="string_current_week">当前周</string>
+    <string name="string_start_section">开始节</string>
+    <string name="string_end_section">结束周</string>
+    <string name="string_which_week">星期</string>
+
+</resources>
