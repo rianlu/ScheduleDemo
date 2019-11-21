@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,11 +9,11 @@
         android:id="@+id/add_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@color/colorPrimary"
         android:theme="@style/AppTheme.AppBarOverlay"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:navigationIcon="@drawable/ic_back_toolbar">
+        app:layout_constraintStart_toStartOf="parent"
+        app:navigationIcon="@drawable/ic_back_toolbar"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
 
     </android.support.v7.widget.Toolbar>
 
@@ -63,12 +64,12 @@
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
                     android:gravity="center">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_teacher"
-                        android:layout_marginEnd="16dp"/>
+                        android:src="@drawable/ic_detail_teacher" />
                 </LinearLayout>
 
                 <EditText
@@ -93,12 +94,12 @@
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_location"
-                        android:layout_marginEnd="16dp"/>
+                        android:src="@drawable/ic_detail_location" />
                 </LinearLayout>
 
                 <EditText
@@ -238,12 +239,12 @@
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
                     android:gravity="center">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_which_week"
-                        android:layout_marginEnd="16dp"/>
+                        android:src="@drawable/ic_detail_which_week" />
                 </LinearLayout>
 
                 <EditText

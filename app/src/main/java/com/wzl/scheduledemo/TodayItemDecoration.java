@@ -15,5 +15,7 @@ public class TodayItemDecoration extends RecyclerView.ItemDecoration {
     public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
         super.getItemOffsets(outRect, view, parent, state);
         outRect.top = verticalSpaceHeight;
+        outRect.left = verticalSpaceHeight;
+        outRect.right = verticalSpaceHeight;
     }
 }

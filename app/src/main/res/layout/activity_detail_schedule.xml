@@ -53,9 +53,10 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/ic_detail_teacher"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
                     android:textSize="20sp"
@@ -78,9 +79,10 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/ic_detail_location"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
                     android:textSize="20sp"
@@ -149,8 +151,10 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_detail_start_end_section"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
                     android:textSize="20sp"
@@ -172,9 +176,10 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/ic_detail_which_week"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
                     android:textSize="20sp"
