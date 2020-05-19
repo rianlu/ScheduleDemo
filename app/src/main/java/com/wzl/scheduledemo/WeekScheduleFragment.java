@@ -49,11 +49,11 @@ public class WeekScheduleFragment extends Fragment {
         return view;
     }
 
-    // 加载左侧节数
+    // 创建左侧节数
     private void createLeftView(View view, int endHeight){
         RelativeLayout leftLayout = view.findViewById(R.id.left_layout);
         for (int i = 0; i < endHeight/180; i ++){
-            View leftView = LayoutInflater.from(getActivity()).inflate(R.layout.left_item, leftLayout, false);
+            View leftView = LayoutInflater.from(requireContext()).inflate(R.layout.left_item, leftLayout, false);
             LinearLayout.LayoutParams leftParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 180);
             leftParams.setMargins(0, i*180, 0, 0);
             leftView.setLayoutParams(leftParams);
@@ -76,9 +76,10 @@ public class WeekScheduleFragment extends Fragment {
 //            RelativeLayout saturdaylayout = view.findViewById(R.id.saturday_layout);
 //            RelativeLayout sundaylayout = view.findViewById(R.id.sunday_layout);
             for (final Schedule schedule : list) {
-                SharedPreferences sp = Objects.requireNonNull(getActivity()).getSharedPreferences("config", Context.MODE_PRIVATE);
+                SharedPreferences sp = requireActivity().getSharedPreferences("config", Context.MODE_PRIVATE);
                 // 判断课程是否已经结束
                 if (sp.getInt("WEEK_NUMBER", 1) >= schedule.getStartWeek() && sp.getInt("WEEK_NUMBER", 1) <= schedule.getEndWeek()){
+                    // 通过课程的时间显示到对应的分支上
                     switch (schedule.getWhichWeek()) {
                         case 1:
                             layout = mondayLayout;
@@ -96,29 +97,31 @@ public class WeekScheduleFragment extends Fragment {
                             layout = fridayLayout;
                             break;
                     }
-                    View rightView = LayoutInflater.from(getActivity()).inflate(R.layout.week_item, layout, false); //加载单个课程布局
+                    // 加载单个课程布局
+                    View weekView = LayoutInflater.from(getActivity()).inflate(R.layout.week_item, layout, false);
+                    // 开始位置
                     int startHeight = height * (schedule.getStartSection() - 1);
+                    // 课程的所需高度
                     int layoutHeight = (schedule.getEndSection() - schedule.getStartSection() + 1) * height;
-                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, layoutHeight); //设置布局高度,即跨多少节课
-                    //  前提布局类型是RelativeLayout
+                    // 设置布局高度,即跨多少节课
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, layoutHeight);
+                    // 前提布局类型是RelativeLayout
                     params.setMargins(0, startHeight, 0, 0);
-                    rightView.setLayoutParams(params);
-                    TextView tvCourse = rightView.findViewById(R.id.tv_course);
-                    TextView tvTeacher = rightView.findViewById(R.id.tv_teacher);
-                    TextView tvLocation = rightView.findViewById(R.id.tv_location);
+                    weekView.setLayoutParams(params);
+                    TextView tvCourse = weekView.findViewById(R.id.tv_course);
+                    TextView tvTeacher = weekView.findViewById(R.id.tv_teacher);
+                    TextView tvLocation = weekView.findViewById(R.id.tv_location);
 
                     tvCourse.setText(schedule.getCourse());
                     tvTeacher.setText(schedule.getTeacher());
                     tvLocation.setText(schedule.getLocation());
-                    layout.addView(rightView);
-                    rightView.setOnClickListener(new View.OnClickListener() {
+                    layout.addView(weekView);
+                    weekView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(getActivity(), DetailScheduleActivity.class);
                             intent.putExtra("schedule", schedule);
-                            //这里的startActivityForResult最后会在Activity中的onActivityResult响应
-                            //直接使用startActivityForResult请求码并不匹配
-                            getActivity().startActivityForResult(intent, REQUEST_CODE);
+                            requireActivity().startActivityForResult(intent, REQUEST_CODE);
                         }
                     });
 
