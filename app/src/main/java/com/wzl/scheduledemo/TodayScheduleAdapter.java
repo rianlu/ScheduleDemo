@@ -31,7 +31,7 @@ public class TodayScheduleAdapter extends RecyclerView.Adapter<TodayScheduleAdap
         viewHolder.tvCourse.setText(schedule.getCourse());
         viewHolder.tvLocation.setText(schedule.getLocation());
         viewHolder.tvTeacher.setText(schedule.getTeacher());
-
+        viewHolder.tvSection.setText(schedule.getStartSection() + "-" + schedule.getEndSection() + " 节");
     }
 
     @Override
@@ -43,11 +43,13 @@ public class TodayScheduleAdapter extends RecyclerView.Adapter<TodayScheduleAdap
         TextView tvCourse;
         TextView tvLocation;
         TextView tvTeacher;
+        TextView tvSection;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvCourse = itemView.findViewById(R.id.tv_course);
             tvLocation = itemView.findViewById(R.id.tv_location);
             tvTeacher = itemView.findViewById(R.id.tv_teacher);
+            tvSection = itemView.findViewById(R.id.tv_section);
         }
     }
 }

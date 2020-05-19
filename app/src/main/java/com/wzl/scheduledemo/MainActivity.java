@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.use_info:
                 new AlertDialog.Builder(this)
                         .setTitle("关于")
-                        .setMessage("Design By Lu")
+                        .setMessage("")
                         .setPositiveButton("确定", null)
                         .show();
                 break;
