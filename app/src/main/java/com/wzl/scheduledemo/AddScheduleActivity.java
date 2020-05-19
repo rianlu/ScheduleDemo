@@ -157,11 +157,24 @@ public class AddScheduleActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.success){
-            if (IS_INSERT){
-                insertSchedule();
-            }else {
-                updateSchedule();
+            if (actvCourse.getText().length() > 0 &&
+                    etTeacher.getText().length() > 0 &&
+                    etLocation.getText().length() > 0 &&
+                    etStartWeek.getText().length() > 0 &&
+                    etEndWeek.getText().length() > 0 &&
+                    etCurrentWeek.getText().length() > 0 &&
+                    etStartSection.getText().length() > 0 &&
+                    etEndSection.getText().length() > 0 &&
+                    etWhichWeek.getText().length() > 0) {
+                if (IS_INSERT) {
+                    insertSchedule();
+                } else {
+                    updateSchedule();
+                }
+            } else {
+                Toast.makeText(this, "请完善内容！", Toast.LENGTH_SHORT).show();
             }
+
         }
         return super.onOptionsItemSelected(item);
     }
