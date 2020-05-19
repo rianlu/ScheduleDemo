@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.use_info:
                 new AlertDialog.Builder(this)
                         .setTitle("关于")
-                        .setMessage("")
+                        .setMessage("Design By FaceBlack")
                         .setPositiveButton("确定", null)
                         .show();
                 break;

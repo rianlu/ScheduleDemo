@@ -38,8 +38,8 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_course" />
 
@@ -64,8 +64,8 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_teacher" />
 
@@ -89,8 +89,8 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_location" />
 
@@ -114,40 +114,34 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_start_end_week"/>
 
                 <EditText
                     android:id="@+id/et_start_week"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:hint="@string/string_start_week"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="16sp" />
 
-            </LinearLayout>
-
-            <!--结束周-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="至"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
 
                 <EditText
                     android:id="@+id/et_end_week"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/string_end_week"
-                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:inputType="number"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -162,16 +156,17 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_current_week"/>
 
                 <EditText
                     android:id="@+id/et_current_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/string_current_week"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -186,42 +181,35 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_start_end_section"/>
 
                 <EditText
                     android:id="@+id/et_start_section"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:hint="@string/string_start_section"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="16sp" />
 
-            </LinearLayout>
-
-            <!--结束节-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="至"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
 
                 <EditText
                     android:id="@+id/et_end_section"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:hint="@string/string_end_section"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="16sp" />
-
             </LinearLayout>
 
             <!--星期-->
@@ -234,17 +222,17 @@
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_which_week" />
+                    android:src="@drawable/ic_start_end_week" />
 
                 <EditText
                     android:id="@+id/et_which_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/string_which_week"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textSize="16sp" />
 
             </LinearLayout>
