@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/today_item_height"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/today_item_bg">
+    android:background="@drawable/today_item_bg"
+    android:clickable="true"
+    android:focusable="true">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -60,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.85" />
+            app:layout_constraintGuide_percent="0.8" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"

@@ -31,6 +31,10 @@ public class DetailScheduleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail_schedule);
 
         initView();
+
+        Intent intent = getIntent();
+        schedule = (Schedule) intent.getSerializableExtra("schedule");
+
         initData();
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -54,8 +58,7 @@ public class DetailScheduleActivity extends AppCompatActivity {
     }
 
     public void initData(){
-        Intent intent = getIntent();
-        schedule = (Schedule) intent.getSerializableExtra("schedule");
+
         //将课程名字显示到ToolBar上
         toolbar.setTitle(schedule.getCourse());
         tvTeacher.setText(schedule.getTeacher());
@@ -117,5 +120,11 @@ public class DetailScheduleActivity extends AppCompatActivity {
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onBackPressed() {
+        setResult(2);
+        super.onBackPressed();
     }
 }

@@ -215,9 +215,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+
+        // 添加
         if (requestCode == REQUEST_CODE && resultCode == 1){
             initFragment();
         }
+        // 详情页面返回
         if (requestCode == REQUEST_CODE && resultCode == 2){
             initFragment();
         }
