@@ -16,7 +16,7 @@
     <string name="string_end_week">结束周</string>
     <string name="string_current_week">当前周</string>
     <string name="string_start_section">开始节</string>
-    <string name="string_end_section">结束周</string>
+    <string name="string_end_section">结束节</string>
     <string name="string_which_week">星期</string>
 
 </resources>

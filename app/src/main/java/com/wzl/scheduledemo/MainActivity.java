@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         ScheduleUtils.WEEK_NUMBER = sp.getInt("WEEK_NUMBER", 1);
-        tvWeek.setText("第" + ScheduleUtils.WEEK_NUMBER + "周");
+        tvWeek.setText("第 " + ScheduleUtils.WEEK_NUMBER + " 周");
         Toolbar toolbar = findViewById(R.id.tb);
         //去除标题
         toolbar.setTitle("");
@@ -102,9 +102,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View view) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                final EditText et = new EditText(MainActivity.this);
+                View dialogView = getLayoutInflater().inflate(R.layout.dialog_current_week, null, false);
+                final EditText et = dialogView.findViewById(R.id.et_current_week);
                 dialog.setTitle("设置当前周")
-                        .setView(et)
+                        .setView(dialogView)
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

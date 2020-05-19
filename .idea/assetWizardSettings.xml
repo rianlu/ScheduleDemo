@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_detail_start_end_section" />
-                            <entry key="sourceFile" value="C:\Users\L" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_start_end_section" />
+                            <entry key="sourceFile" value="C:\Users\Lu\Desktop\计时.svg" />
                           </map>
                         </option>
                       </PersistentState>

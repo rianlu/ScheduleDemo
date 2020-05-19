@@ -17,6 +17,7 @@ import java.util.List;
 
 public class AddScheduleActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
     private AutoCompleteTextView actvCourse;
     private EditText etTeacher;
     private EditText etLocation;
@@ -32,7 +33,7 @@ public class AddScheduleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_schedule);
-        Toolbar toolbar = findViewById(R.id.add_toolbar);
+        toolbar = findViewById(R.id.add_toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -86,7 +87,8 @@ public class AddScheduleActivity extends AppCompatActivity {
         });
         // 判断是否时通过编辑到达该页面
         Schedule schedule = (Schedule) getIntent().getSerializableExtra("editSchedule");
-        if (schedule != null){
+        if (schedule != null) {
+            toolbar.setTitle("修改课程");
             IS_INSERT = false;
             actvCourse.setText(schedule.getCourse());
             etTeacher.setText(schedule.getTeacher());
@@ -97,6 +99,8 @@ public class AddScheduleActivity extends AppCompatActivity {
             etStartSection.setText(String.valueOf(schedule.getStartSection()));
             etEndSection.setText(String.valueOf(schedule.getEndSection()));
             etWhichWeek.setText(String.valueOf(schedule.getWhichWeek()));
+        } else {
+            toolbar.setTitle("添加课程");
         }
     }
 

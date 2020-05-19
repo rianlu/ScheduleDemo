@@ -55,7 +55,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_detail_teacher"
+                    android:src="@drawable/ic_teacher"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
@@ -81,7 +81,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_detail_location"
+                    android:src="@drawable/ic_location"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
@@ -153,7 +153,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_detail_start_end_section"
+                    android:src="@drawable/ic_start_end_section"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView
@@ -178,7 +178,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_detail_which_week"
+                    android:src="@drawable/ic_which_week"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"/>
                 <TextView

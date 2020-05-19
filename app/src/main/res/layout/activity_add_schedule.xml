@@ -32,23 +32,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_course" />
+
                 <AutoCompleteTextView
                     android:id="@+id/et_course"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:completionThreshold="1"
+                    android:hint="@string/string_course"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_course"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -56,29 +58,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="16dp"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_teacher" />
-                </LinearLayout>
+                    android:src="@drawable/ic_teacher" />
 
                 <EditText
                     android:id="@+id/et_teacher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_teacher"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_teacher"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -86,29 +83,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_location" />
-                </LinearLayout>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_location" />
 
                 <EditText
                     android:id="@+id/et_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_location"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_location"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -116,22 +108,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp" />
+
                 <EditText
                     android:id="@+id/et_start_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_start_week"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_start_week"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -139,22 +132,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp" />
+
                 <EditText
                     android:id="@+id/et_end_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_end_week"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_end_week"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -162,22 +156,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp" />
+
                 <EditText
                     android:id="@+id/et_current_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_current_week"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_current_week"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -185,22 +180,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp" />
+
                 <EditText
                     android:id="@+id/et_start_section"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_start_section"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_start_section"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -208,22 +204,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp" />
+
                 <EditText
                     android:id="@+id/et_end_section"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_end_section"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_end_section"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -231,29 +228,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="16dp"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_detail_which_week" />
-                </LinearLayout>
+                    android:src="@drawable/ic_which_week" />
 
                 <EditText
                     android:id="@+id/et_which_week"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/string_which_week"
                     android:inputType="text"
-                    android:textSize="16sp"
-                    android:hint="@string/string_which_week"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
