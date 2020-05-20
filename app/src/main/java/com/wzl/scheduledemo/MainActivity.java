@@ -288,6 +288,11 @@ public class MainActivity extends AppCompatActivity {
 
     //  导出数据
     public void exportData() {
+        List<Schedule> list = ScheduleUtils.getScheduleList();
+        if (list.size() <= 0) {
+            Toast.makeText(this, "当前暂无数据可以导出", Toast.LENGTH_SHORT).show();
+            return;
+        }
         XmlSerializer serializer = Xml.newSerializer();
         File file = new File(Environment.getExternalStorageDirectory().getPath(), "backup.xml");
         try {
@@ -296,7 +301,6 @@ public class MainActivity extends AppCompatActivity {
             serializer.startDocument("utf-8", true);
             serializer.startTag(null, "schedules");
 
-            List<Schedule> list = ScheduleUtils.getScheduleList();
             for (Schedule schedule : list){
                 serializer.startTag(null, "schedule");
 
