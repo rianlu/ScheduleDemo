@@ -237,6 +237,10 @@ public class MainActivity extends AppCompatActivity {
         int fail = 0;
         try {
             File file = new File(Environment.getExternalStorageDirectory().getPath(), "backup.xml");
+            if (!file.exists()) {
+                Toast.makeText(this, "当前没有可恢复的数据", Toast.LENGTH_SHORT).show();
+                return;
+            }
             InputStream inputStream = new FileInputStream(file);
             parser.setInput(inputStream, "utf-8");
             int eventType = parser.getEventType();
